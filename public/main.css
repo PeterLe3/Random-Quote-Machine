@@ -1,0 +1,23 @@
+body {
+	background: #ADD8E6;
+}
+.what{
+	margin-top : 6em;
+	border-radius: 1em;
+	border: 1.5em solid #BDBDBD;
+	
+
+}
+
+.round {
+	border-radius: .8em;
+}
+
+#quote2 {
+	background: #87CEEB;
+	
+}
+
+.fa-twitter {
+  color: white;
+}
