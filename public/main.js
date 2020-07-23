@@ -9,7 +9,7 @@ $(document).ready(function() {
   $("#quote").click(function() {
   
       
-     $.ajax({url: 'http://quotes.stormconsultancy.co.uk/random.json', 
+     $.ajax({url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json', 
         type : 'GET',
         dataType: 'json',
         jsonp : false,
@@ -28,8 +28,8 @@ $(document).ready(function() {
 
          
          $("body").css("background-color", colors[i]);
-         quoteBlock.text('"' +data.quote + '"');
-         author.text("- " +data.author);
+         quoteBlock.text('"' +data.quoteText + '"');
+         author.text("- " +data.quoteAuthor);
          author.css("font-size", "1em");
          }
            
