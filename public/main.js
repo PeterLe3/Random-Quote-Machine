@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+  var proxy = "https://cors-anywhere.herokuapp.com/";
   var quoteBlock = $('#text');
   var author = $('#text2');
   var colors = ["#ADD8E6", " #FF7F50" ," #3CB371" ,"#BC8F8F" ,"#A52A2A" ," #F0E68C" ," #FF6347"];
@@ -9,7 +10,7 @@ $(document).ready(function() {
   $("#quote").click(function() {
   
       
-     $.ajax({url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json', 
+     $.ajax({url: proxy + 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json', 
         type : 'GET',
         dataType: 'json',
         jsonp : false,
